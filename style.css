@@ -1,0 +1,41 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #213547;
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #2c3e50;
+}
+
+.card {
+  padding: 2em;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  margin-top: 2em;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+p {
+  color: #666;
+  font-size: 1.2em;
+}
