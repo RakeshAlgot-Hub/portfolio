@@ -185,7 +185,7 @@ function App() {
             </div>
 
             <div className="mb-8">
-              <h4 className="text-xl font-semibold text-white mb-4">Key Project: HPGL - Hyper Performance Golf League</h4>
+              <h4 className="text-xl font-semibold text-white mb-4">Key Project: HPGL - Hyderabad Premier Golf League</h4>
               <p className="text-white/80 leading-relaxed mb-6">
                 Led backend development for a comprehensive golf tournament management platform, 
                 architecting secure, scalable APIs that handle complex user hierarchies, 
