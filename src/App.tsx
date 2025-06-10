@@ -86,7 +86,7 @@ function App() {
           <div className="mb-8">
             <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
               <img 
-                src="/20250529_1009_Cartoon Podcast Studio Portrait_remix_01jwd5bnpvefms256j66659hzn.png" 
+                src={`${import.meta.env.BASE_URL}my-image.png`} 
                 alt="Rakesh Algot - Backend Developer"
                 className="w-full h-full object-cover"
               />
