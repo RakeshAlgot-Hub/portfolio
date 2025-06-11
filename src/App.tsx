@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  Code2, 
-  Database, 
-  Shield, 
-  Server, 
-  GitBranch, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  ExternalLink,
+import { useState, useEffect } from 'react';
+import {
+  Database,
+  Shield,
+  Server,
+  GitBranch,
+  Mail,
+  Phone,
+  MapPin,
   ChevronDown,
   Terminal,
   Cloud,
@@ -85,8 +83,8 @@ function App() {
         <div className={`max-w-4xl mx-auto text-center transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="mb-8">
             <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
-              <img 
-                src={`${import.meta.env.BASE_URL}my-image.png`} 
+              <img
+                src={`${import.meta.env.BASE_URL}my-image.png`}
                 alt="Rakesh Algot - Backend Developer"
                 className="w-full h-full object-cover"
               />
@@ -97,20 +95,19 @@ function App() {
             <h2 className="text-2xl md:text-3xl font-light text-blue-200 mb-6">
               Backend Developer & System Architect
             </h2>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-              Building secure, scalable backend systems at <span className="text-blue-300 font-semibold">Yensi Solutions</span>. 
-              Passionate about clean architecture, performance optimization, and emerging technologies.
+            <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+              Backend developer at <span className="text-blue-300 font-semibold">Yensi Solutions</span> with one year of experience in Python-based backend development. Passionate about building reliable APIs and exploring the potential of large language models.
             </p>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button 
+            <button
               onClick={() => scrollToSection('experience')}
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 hover:shadow-lg hover:shadow-blue-500/25"
             >
               View My Work <ArrowRight className="w-5 h-5" />
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('contact')}
               className="border border-white/30 hover:border-white/50 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-white/10"
             >
@@ -118,7 +115,7 @@ function App() {
             </button>
           </div>
 
-          <button 
+          <button
             onClick={() => scrollToSection('about')}
             className="animate-bounce text-white/60 hover:text-white transition-colors"
           >
@@ -135,18 +132,15 @@ function App() {
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-stretch">
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
               <User className="w-12 h-12 text-blue-400 mb-6" />
               <h3 className="text-2xl font-bold text-white mb-4">Professional Journey</h3>
               <p className="text-white/80 leading-relaxed mb-6">
-                Since August 2024, I've been architecting robust backend systems at Yensi Solutions, 
-                specializing in FastAPI, MongoDB, and Keycloak. My focus is on building secure, 
-                scalable applications that power seamless user experiences.
+                Since August 2024, I’ve been building robust backend systems at Yensi Solutions, focusing on FastAPI, MongoDB, and Keycloak.
               </p>
               <p className="text-white/80 leading-relaxed">
-                I believe that great backend systems are the silent heroes of exceptional user experiences. 
-                Clean architecture, well-documented APIs, and optimized performance are at the core of everything I build.
+                I specialize in creating secure and scalable applications—clean architecture, well-documented APIs, and optimized performance are central to my development philosophy.
               </p>
             </div>
 
@@ -154,14 +148,12 @@ function App() {
               <Target className="w-12 h-12 text-purple-400 mb-6" />
               <h3 className="text-2xl font-bold text-white mb-4">Future Vision</h3>
               <p className="text-white/80 leading-relaxed mb-6">
-                I'm expanding my expertise into AI and Data Science, combining my backend strength 
-                with machine learning, vector databases, and data engineering. The intersection of 
-                scalable systems and intelligent data processing excites me.
+                I’m expanding my expertise into AI and data science, aiming to bridge my backend development skills with practical experience in machine learning, vector databases, and intelligent data processing.
               </p>
               <p className="text-white/80 leading-relaxed">
-                Currently building my DevOps capabilities with Kubernetes, CI/CD pipelines, 
-                and cloud-native architectures to create truly modern, resilient systems.
+                I’m also strengthening my DevOps capabilities by working with Kubernetes, CI/CD pipelines, and cloud-native architectures to build modern, scalable, and resilient systems.
               </p>
+
             </div>
           </div>
         </div>
@@ -187,8 +179,8 @@ function App() {
             <div className="mb-8">
               <h4 className="text-xl font-semibold text-white mb-4">Key Project: HPGL - Hyderabad Premier Golf League</h4>
               <p className="text-white/80 leading-relaxed mb-6">
-                Led backend development for a comprehensive golf tournament management platform, 
-                architecting secure, scalable APIs that handle complex user hierarchies, 
+                Led backend development for a comprehensive golf tournament management platform,
+                architecting secure, scalable APIs that handle complex user hierarchies,
                 team management, and real-time tournament coordination.
               </p>
             </div>
@@ -217,25 +209,25 @@ function App() {
                 <div className="space-y-4">
                   <div className="bg-white/5 rounded-lg p-4">
                     <p className="text-white/80 leading-relaxed">
-                      <strong className="text-white">Security:</strong> Implemented Keycloak token-based authentication 
+                      <strong className="text-white">Security:</strong> Implemented Keycloak token-based authentication
                       with OAuth2, ensuring enterprise-grade security across all endpoints.
                     </p>
                   </div>
                   <div className="bg-white/5 rounded-lg p-4">
                     <p className="text-white/80 leading-relaxed">
-                      <strong className="text-white">Performance:</strong> Optimized MongoDB queries and 
+                      <strong className="text-white">Performance:</strong> Optimized MongoDB queries and
                       implemented efficient data structures for real-time user interactions.
                     </p>
                   </div>
                   <div className="bg-white/5 rounded-lg p-4">
                     <p className="text-white/80 leading-relaxed">
-                      <strong className="text-white">Architecture:</strong> Built modular, maintainable APIs 
+                      <strong className="text-white">Architecture:</strong> Built modular, maintainable APIs
                       with FastAPI and Pydantic for robust data validation.
                     </p>
                   </div>
                   <div className="bg-white/5 rounded-lg p-4">
                     <p className="text-white/80 leading-relaxed">
-                      <strong className="text-white">Automation:</strong> Integrated n8n for backend workflow 
+                      <strong className="text-white">Automation:</strong> Integrated n8n for backend workflow
                       automation and orchestration, streamlining complex business processes.
                     </p>
                   </div>
@@ -259,7 +251,7 @@ function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {technologies.map((tech, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 group"
               >
@@ -314,7 +306,7 @@ function App() {
             <h2 className="text-4xl font-bold text-white mb-4">Let's Connect</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6"></div>
             <p className="text-white/80 text-lg">
-              Looking for a backend engineer who builds systems that scale, secure themselves, and just work? 
+              Looking for a backend engineer who builds systems that scale, secure themselves, and just work?
               Let's discuss how I can help bring your ideas to life.
             </p>
           </div>
@@ -352,10 +344,10 @@ function App() {
                     <Globe className="w-6 h-6 text-white" />
                   </a>
                 </div>
-                
+
                 <div className="mt-8 pt-6 border-t border-white/20">
                   <p className="text-white/60 text-sm leading-relaxed">
-                    Open to discussing exciting opportunities in backend development, 
+                    Open to discussing exciting opportunities in backend development,
                     system architecture, and emerging technologies. Let's build something amazing together!
                   </p>
                 </div>
