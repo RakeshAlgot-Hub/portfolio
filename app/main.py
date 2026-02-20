@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv() 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -8,17 +10,17 @@ from app.routes import rooms, auth, properties, units, tenants, units_update, da
 app = FastAPI()
 
 # Safe CORS setup
-allowedOriginsEnv = os.getenv("ALLOWED_ORIGINS")
+allowedOrigins = os.getenv("ALLOWED_ORIGINS")
 
-if allowedOriginsEnv:
-    allowedOrigins = allowedOriginsEnv.split(",")
+if allowedOrigins:
+    allowedOrigins = allowedOrigins.split(",")
 else:
-    allowedOrigins = ["*"]  # default to allow all
+    allowedOrigins = []
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowedOrigins,
-    allow_credentials=False,  # important when using "*"
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )

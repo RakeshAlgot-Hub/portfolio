@@ -13,4 +13,3 @@ db = client["project"]
 
 def getCollection(name: str):
     return db[name]
-
