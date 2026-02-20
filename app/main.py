@@ -8,17 +8,17 @@ from app.routes import rooms, auth, properties, units, tenants, units_update, da
 app = FastAPI()
 
 # Safe CORS setup
-allowedOrigins = os.getenv("ALLOWED_ORIGINS")
+allowedOriginsEnv = os.getenv("ALLOWED_ORIGINS")
 
-if allowedOrigins:
-    allowedOrigins = allowedOrigins.split(",")
+if allowedOriginsEnv:
+    allowedOrigins = allowedOriginsEnv.split(",")
 else:
-    allowedOrigins = []
+    allowedOrigins = ["*"]  # default to allow all
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowedOrigins,
-    allow_credentials=True,
+    allow_credentials=False,  # important when using "*"
     allow_methods=["*"],
     allow_headers=["*"],
 )
