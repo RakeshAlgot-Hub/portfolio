@@ -22,7 +22,7 @@ export function Experience() {
           className="text-2xl sm:text-3xl font-bold mb-12 reveal"
           style={{ color: 'var(--text-primary)' }}
         >
-          Where I've worked
+          Professional Experience at Yensi Solutions
         </h2>
 
         <div className="grid lg:grid-cols-[1fr_2fr] gap-10 reveal">
@@ -50,6 +50,7 @@ export function Experience() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 hover:opacity-80 transition-opacity"
                     style={{ color: 'var(--text-primary)' }}
+                    title="Yensi Solutions - AI & Backend Engineering"
                   >
                     Yensi Solutions
                     <ArrowUpRight size={13} style={{ color: 'var(--text-tertiary)' }} />

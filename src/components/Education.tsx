@@ -12,7 +12,7 @@ export function Education() {
           className="text-2xl sm:text-3xl font-bold mb-12 reveal"
           style={{ color: 'var(--text-primary)' }}
         >
-          Academic background
+          Education at Nizam College
         </h2>
 
         <div className="max-w-xl reveal">
@@ -41,7 +41,7 @@ export function Education() {
                       className="text-base font-semibold"
                       style={{ color: 'var(--text-primary)' }}
                     >
-                      Master of Computer Applications
+                      Master of Computer Applications (MCA)
                     </h3>
                     <p
                       className="text-sm mt-0.5"
@@ -53,6 +53,7 @@ export function Education() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1 hover:opacity-80 transition-opacity"
                         style={{ color: 'var(--text-secondary)' }}
+                        title="Nizam College, Hyderabad - MCA Program"
                       >
                         Nizam College
                         <ArrowUpRight size={12} style={{ color: 'var(--text-tertiary)' }} />

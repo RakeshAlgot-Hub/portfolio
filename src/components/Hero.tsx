@@ -64,9 +64,8 @@ export function Hero({ onOpenResume }: HeroProps) {
               className="text-base font-mono mb-6 reveal reveal-delay-2"
               style={{ color: 'var(--text-secondary)' }}
             >
-              Backend Engineer ·{' '}
+              Backend Engineer at <span style={{ color: 'var(--accent-blue)' }}>Yensi Solutions</span> ·{' '}
               <span style={{ color: 'var(--accent-teal)' }}>AI Systems</span>
-              {' '}· LLM Infrastructure
             </p>
 
             <p
@@ -74,7 +73,7 @@ export function Hero({ onOpenResume }: HeroProps) {
               style={{ color: 'var(--text-secondary)', lineHeight: '1.75' }}
             >
               Building scalable APIs, async backend systems, and production-grade AI pipelines.
-              Focused on RAG, retrieval optimization, and high-performance infrastructure.
+              Focused on RAG, retrieval optimization, and high-performance LLM infrastructure at Yensi Solutions.
             </p>
 
             <div className="flex items-center gap-2 mb-10 reveal reveal-delay-3" style={{ color: 'var(--text-tertiary)' }}>
