@@ -98,13 +98,13 @@ export const PROJECTS: Project[] = [
 
 export const LABEL_COLORS: Record<string, { bg: string; border: string; text: string }> = {
   green: {
-    bg: 'rgba(34, 197, 94, 0.08)',
-    border: 'rgba(34, 197, 94, 0.2)',
+    bg: 'var(--green-bg-subtle)',
+    border: 'var(--green-border)',
     text: 'var(--accent-green)',
   },
   blue: {
-    bg: 'rgba(79, 70, 229, 0.08)',
-    border: 'rgba(79, 70, 229, 0.2)',
+    bg: 'var(--blue-bg-subtle)',
+    border: 'var(--blue-border)',
     text: 'var(--accent-blue)',
   },
 };

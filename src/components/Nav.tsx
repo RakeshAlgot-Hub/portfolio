@@ -94,7 +94,7 @@ export function Nav({ isDark, toggleTheme, onOpenResume }: NavProps) {
                 backgroundColor: isActive ? 'var(--bg-1)' : 'transparent',
                 border: '1px solid',
                 borderColor: isActive ? 'var(--border)' : 'transparent',
-                boxShadow: isActive ? '0 1px 3px rgba(0,0,0,0.05)' : 'none',
+                boxShadow: isActive ? '0 1px 3px var(--shadow-sm)' : 'none',
               };
               return link.href.startsWith('/') ? (
                 <Link

@@ -95,7 +95,7 @@ export function Contact() {
                 className="inline-flex items-center gap-2 w-full justify-center py-3 px-5 rounded-lg text-sm font-medium transition-all duration-150 hover:opacity-90 active:scale-95"
                 style={{
                   backgroundColor: 'var(--accent-blue)',
-                  color: '#fff',
+                  color: 'var(--text-on-accent)',
                 }}
               >
                 <Mail size={15} />
@@ -151,15 +151,15 @@ function ContactLink({
       rel={external ? 'noopener noreferrer' : undefined}
       className="group flex items-center gap-3 px-4 py-3 rounded-lg border text-sm transition-all duration-150"
       style={{
-        backgroundColor: primary ? 'rgba(79, 70, 229, 0.06)' : 'var(--bg-1)',
-        borderColor: primary ? 'rgba(96, 165, 250, 0.2)' : 'var(--border)',
+        backgroundColor: primary ? 'var(--blue-bg-subtle)' : 'var(--bg-1)',
+        borderColor: primary ? 'var(--blue-border)' : 'var(--border)',
         color: primary ? 'var(--accent-blue)' : 'var(--text-secondary)',
       }}
       onMouseEnter={e => {
-        (e.currentTarget as HTMLElement).style.borderColor = 'rgba(79,70,229,0.4)';
+        (e.currentTarget as HTMLElement).style.borderColor = 'var(--blue-border-active)';
       }}
       onMouseLeave={e => {
-        (e.currentTarget as HTMLElement).style.borderColor = primary ? 'rgba(79, 70, 229, 0.2)' : 'var(--border)';
+        (e.currentTarget as HTMLElement).style.borderColor = primary ? 'var(--blue-border)' : 'var(--border)';
       }}
     >
       {icon}

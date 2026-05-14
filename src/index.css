@@ -4,33 +4,71 @@
 
 @layer base {
   :root {
-    --bg: #f8fafc;
-    --bg-1: #f1f5f9;
-    --bg-2: #e2e8f0;
-    --bg-3: #cbd5e1;
+    --bg: #ffffff;
+    --bg-1: #f8fafc;
+    --bg-2: #f1f5f9;
+    --bg-3: #e2e8f0;
     --border: #e2e8f0;
     --border-subtle: #f1f5f9;
     --text-primary: #0f172a;
     --text-secondary: #475569;
     --text-tertiary: #94a3b8;
-    --accent-blue: #4f46e5;
-    --accent-teal: #0d9488;
+    --accent-blue: #6366f1;
+    --accent-blue-rgb: 99, 102, 241;
+    --accent-teal: #14b8a6;
+    --accent-teal-rgb: 20, 184, 166;
     --accent-green: #10b981;
+    --accent-green-rgb: 16, 185, 129;
+    --accent-rose: #f43f5e;
+    --accent-amber: #f59e0b;
+    --accent-cyan: #06b6d4;
+    --text-on-accent: #fff;
+    --backdrop: rgba(0, 0, 0, 0.5);
+    --shadow-sm: rgba(0, 0, 0, 0.05);
+    --blue-bg: rgba(var(--accent-blue-rgb), 0.1);
+    --blue-bg-subtle: rgba(var(--accent-blue-rgb), 0.06);
+    --blue-border: rgba(var(--accent-blue-rgb), 0.2);
+    --blue-border-strong: rgba(var(--accent-blue-rgb), 0.35);
+    --blue-border-active: rgba(var(--accent-blue-rgb), 0.4);
+    --teal-bg: rgba(var(--accent-teal-rgb), 0.1);
+    --teal-bg-subtle: rgba(var(--accent-teal-rgb), 0.06);
+    --teal-border: rgba(var(--accent-teal-rgb), 0.2);
+    --green-bg-subtle: rgba(var(--accent-green-rgb), 0.08);
+    --green-border: rgba(var(--accent-green-rgb), 0.2);
   }
 
   .dark {
-    --bg: #0f172a;
-    --bg-1: #1e293b;
-    --bg-2: #334155;
-    --bg-3: #475569;
+    --bg: #0b1121;
+    --bg-1: #0f172a;
+    --bg-2: #1e293b;
+    --bg-3: #334155;
     --border: #334155;
     --border-subtle: #1e293b;
     --text-primary: #f8fafc;
     --text-secondary: #cbd5e1;
     --text-tertiary: #64748b;
     --accent-blue: #818cf8;
+    --accent-blue-rgb: 129, 140, 248;
     --accent-teal: #2dd4bf;
+    --accent-teal-rgb: 45, 212, 191;
     --accent-green: #34d399;
+    --accent-green-rgb: 52, 211, 153;
+    --accent-rose: #fb7185;
+    --accent-amber: #fbbf24;
+    --accent-cyan: #22d3ee;
+    --text-on-accent: #fff;
+    --backdrop: rgba(0, 0, 0, 0.7);
+    --shadow-sm: rgba(0, 0, 0, 0.15);
+    --blue-bg: rgba(var(--accent-blue-rgb), 0.1);
+    --blue-bg-subtle: rgba(var(--accent-blue-rgb), 0.06);
+    --blue-border: rgba(var(--accent-blue-rgb), 0.2);
+    --blue-border-strong: rgba(var(--accent-blue-rgb), 0.35);
+    --blue-border-active: rgba(var(--accent-blue-rgb), 0.4);
+    --teal-bg: rgba(var(--accent-teal-rgb), 0.1);
+    --teal-bg-subtle: rgba(var(--accent-teal-rgb), 0.06);
+    --teal-border: rgba(var(--accent-teal-rgb), 0.2);
+    --green-bg-subtle: rgba(var(--accent-green-rgb), 0.08);
+    --green-border: rgba(var(--accent-green-rgb), 0.2);
   }
 
   html {
@@ -48,7 +86,7 @@
   * { box-sizing: border-box; }
 
   ::selection {
-    background-color: rgba(79, 70, 229, 0.15);
+    background-color: rgba(var(--accent-blue-rgb), 0.15);
     color: var(--text-primary);
   }
 

@@ -29,7 +29,7 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6"
-      style={{ backgroundColor: 'rgba(0,0,0,0.6)' }}
+      style={{ backgroundColor: 'var(--backdrop)' }}
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -75,7 +75,7 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium transition-all duration-150 hover:opacity-80"
               style={{
                 backgroundColor: 'var(--accent-blue)',
-                color: '#fff',
+                color: 'var(--text-on-accent)',
               }}
             >
               <Download size={13} />
@@ -93,7 +93,7 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
         </div>
 
         {/* PDF viewer */}
-        <div className="flex-1 min-h-0 bg-[#52525b]">
+        <div className="flex-1 min-h-0" style={{ backgroundColor: 'var(--bg-2)' }}>
           <iframe
             src={`${RESUME_URL}#toolbar=0`}
             className="w-full h-full"

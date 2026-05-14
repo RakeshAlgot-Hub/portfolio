@@ -59,7 +59,7 @@ export function ProjectCard({ project, large = false }: { project: Project; larg
         borderColor: 'var(--border)',
       }}
       onMouseEnter={e => {
-        (e.currentTarget as HTMLElement).style.borderColor = 'rgba(79,70,229,0.35)';
+        (e.currentTarget as HTMLElement).style.borderColor = 'var(--blue-border-strong)';
         (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)';
       }}
       onMouseLeave={e => {
@@ -73,7 +73,7 @@ export function ProjectCard({ project, large = false }: { project: Project; larg
           <div
             className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
             style={{
-              backgroundColor: 'rgba(79, 70, 229, 0.1)',
+              backgroundColor: 'var(--blue-bg)',
               color: 'var(--accent-blue)',
             }}
           >

@@ -42,8 +42,8 @@ export function Hero({ onOpenResume }: HeroProps) {
             {/* Availability badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-mono font-medium mb-8 border reveal"
               style={{
-                backgroundColor: 'rgba(34, 197, 94, 0.08)',
-                borderColor: 'rgba(34, 197, 94, 0.2)',
+                backgroundColor: 'var(--green-bg-subtle)',
+                borderColor: 'var(--green-border)',
                 color: 'var(--accent-green)',
               }}
             >
@@ -89,7 +89,7 @@ export function Hero({ onOpenResume }: HeroProps) {
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 hover:opacity-90 active:scale-95"
                 style={{
                   backgroundColor: 'var(--accent-blue)',
-                  color: '#fff',
+                  color: 'var(--text-on-accent)',
                 }}
               >
                 View Projects
@@ -175,8 +175,8 @@ function TerminalCard({ visibleLines }: { visibleLines: number[] }) {
                       key={s}
                       className="px-2 py-0.5 rounded text-xs border"
                       style={{
-                        backgroundColor: 'rgba(79, 70, 229, 0.08)',
-                        borderColor: 'rgba(79, 70, 229, 0.2)',
+                        backgroundColor: 'var(--blue-bg-subtle)',
+                        borderColor: 'var(--blue-border)',
                         color: 'var(--accent-blue)',
                       }}
                     >

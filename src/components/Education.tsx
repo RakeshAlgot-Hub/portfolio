@@ -27,7 +27,7 @@ export function Education() {
               <div
                 className="w-11 h-11 rounded-lg flex items-center justify-center shrink-0"
                 style={{
-                  backgroundColor: 'rgba(45, 212, 191, 0.1)',
+                  backgroundColor: 'var(--teal-bg)',
                   color: 'var(--accent-teal)',
                 }}
               >
@@ -78,8 +78,8 @@ export function Education() {
                   <span
                     className="text-xs font-mono px-2 py-0.5 rounded border"
                     style={{
-                      backgroundColor: 'rgba(45, 212, 191, 0.06)',
-                      borderColor: 'rgba(45, 212, 191, 0.2)',
+                      backgroundColor: 'var(--teal-bg-subtle)',
+                      borderColor: 'var(--teal-border)',
                       color: 'var(--accent-teal)',
                     }}
                   >

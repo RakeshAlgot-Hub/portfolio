@@ -37,7 +37,7 @@ export function Experience() {
             >
               <div
                 className="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
-                style={{ backgroundColor: 'rgba(79, 70, 229, 0.1)' }}
+                style={{ backgroundColor: 'var(--blue-bg)' }}
               >
                 <CompanyLogo />
               </div>
@@ -94,7 +94,7 @@ export function Experience() {
             {ACHIEVEMENTS.map((item, i) => (
               <div
                 key={i}
-                className="flex items-start gap-3 p-4 rounded-xl border transition-all duration-200 hover:border-blue-400 reveal"
+                className="flex items-start gap-3 p-4 rounded-xl border transition-all duration-200 hover:border-[var(--accent-blue)] reveal"
                 style={{
                   backgroundColor: 'var(--bg-1)',
                   borderColor: 'var(--border)',
@@ -138,8 +138,8 @@ export function SectionLabel({ children }: { children: React.ReactNode }) {
       <span
         className="inline-flex items-center px-2.5 py-1 rounded text-xs font-mono font-medium border"
         style={{
-          backgroundColor: 'rgba(79, 70, 229, 0.06)',
-          borderColor: 'rgba(79, 70, 229, 0.2)',
+          backgroundColor: 'var(--blue-bg-subtle)',
+          borderColor: 'var(--blue-border)',
           color: 'var(--accent-blue)',
         }}
       >

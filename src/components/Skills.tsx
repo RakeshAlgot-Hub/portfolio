@@ -42,10 +42,10 @@ const SKILL_GROUPS: SkillGroup[] = [
 const CATEGORY_ACCENTS: Record<string, string> = {
   backend: 'var(--accent-blue)',
   databases: 'var(--accent-teal)',
-  ai: '#0ea5e9',
-  llm: '#8b5cf6',
-  infra: '#f97316',
-  data: 'var(--accent-green)',
+  ai: 'var(--accent-rose)',
+  llm: 'var(--accent-amber)',
+  infra: 'var(--accent-green)',
+  data: 'var(--accent-cyan)',
 };
 
 export function Skills() {
